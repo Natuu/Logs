@@ -1,0 +1,30 @@
+CACHE MANIFEST
+ 
+# v1
+
+CACHE:
+
+index.html
+
+angular/angular-cookies.min.js
+angular/angular-cookies.min.js.map
+angular/angular-resource.min.js
+angular/angular-resource.min.js.map
+angular/angular-route.min.js
+angular/angular-route.min.js.map
+angular/angular.min.js
+angular/angular.min.js.map
+
+data/login.php
+
+jsmin/logs.min.js
+
+stylesheets/main.css
+
+views/list.html
+views/login.html
+views/new.html
+
+ 
+NETWORK:
+*

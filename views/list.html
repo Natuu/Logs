@@ -1,0 +1,8 @@
+<article ng-repeat="log in data.logs | orderBy:'date':'reverse'" class="article">
+	<h3 class="date">
+		[{{ log.date | date:"dd/MM/yy - HH:mm"}}]
+	</h3>
+	<p class="log">
+		{{ log.content }}
+	</p>
+</article>

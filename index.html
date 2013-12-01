@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="Logs" manifest="site.manifest">
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]>
+				<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+	<link href="stylesheets/main.css" media="all" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]>
+	  <link rel="stylesheet" href="stylesheets/main-ie8.css">
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>[Natuu] Historique d'un geek</title>
+</head>
+
+<body ng-controller="LogsCtrl">
+	<header class="header">
+		<h1 class="h1">[Natuu]</h1>
+		<h2 class="h3">Historique d'un geek</h2>
+	</header>
+
+	<nav class="nav">
+	</nav>
+
+	<section class="section" ng-view>
+
+	</section>
+	
+
+	<script src="angular/angular.min.js"></script>
+	<script src="angular/angular-resource.min.js"></script>
+	<script src="angular/angular-route.min.js"></script>
+	<script src="angular/angular-cookies.min.js"></script>
+	<script src="jsmin/logs.min.js"></script>		
+</body>
+</html>

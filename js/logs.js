@@ -126,6 +126,16 @@ angular
 			.success(function(data) {
 
 				$cookies.connected = data;
+
+				if ($cookies.connected == 'true')
+				{
+					window.location.replace('');
+				}
+				else
+				{
+					alert('Tu sais même pas taper ton propre mot de passe è_é')
+				};
+				
 			})
 		}
 	}

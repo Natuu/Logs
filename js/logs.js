@@ -17,10 +17,14 @@ angular
 .controller('LogsCtrl', ['$scope', '$http', '$q', '$cookies',
 	function ($scope, $http, $q, $cookies) {
 
+		$scope.offline = null;
+
 		$scope.data = null;
 
 		$http({method: 'post', url: 'data/data.json'})
 		.success(function(data) {
+
+			$scope.offline = false;
 
 			var defer = new $q.defer;
 
@@ -69,6 +73,8 @@ angular
 		// Sinon on affiche la data sauvegardée savedData et les nouveaux elements newData
 
 		.error(function() {
+
+			$scope.offline = true;
 
 			var newData = JSON.parse(localStorage.getItem('newData'));
 

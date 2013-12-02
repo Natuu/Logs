@@ -1,6 +1,22 @@
-/* Header */
-
 .header
 {
+	background-color: $header;
+	padding: 20px;
+	margin: 40px 0 10px 0;
+	@include box-sizing(border-box);
 
+
+	@include border-radius(7px);
+
+	h1
+	{
+		display: inline-block;
+		margin: 0 10px 0 0;
+		color: $titre;
+	}
+
+	h2
+	{
+		display: inline-block;
+	}
 }

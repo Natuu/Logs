@@ -1,29 +1,30 @@
 /* Layout */
-$body:					#fafafa;
+$body:					#eaeaea;
 
 
-/*******************************************/
-/* Header */
-$header:    			rgba(235, 235, 235, 0.9);
-$logo:      			#e67e22;
+$header:    			#fafafa;
+$article: 				$header;
 
-
-/*******************************************/
-/* Nav */
-$button:        		$header;
 $nav:	        		$header;
-$notifications: 		$logo;
 
 
 /*******************************************/
-/* Sections */
+/* Couleurs */
+$titre: 				#d9ab0e;
+$date: 					#27c217;
 
 
 
 /********************************************/
 /* Objets */
 $button-color: 			#fefefe;
-$button: 				#aaaaaa;
+$button: 				#ff6565;
+$button-online: 		#27c217;
+$button-offline: 		#888888;
+$button-login: 			#27c217;
+$button-new: 			#27c217;
+
+$input: 				#aaaaaa;
 
 
 /******************************************************************************/

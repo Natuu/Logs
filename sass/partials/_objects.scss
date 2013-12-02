@@ -4,10 +4,10 @@
 {
 	border: none;
 	margin: 0;
-	@include border-radius(2px);
-	padding: 3px 8px 2px 8px;
+	@include border-radius(3px);
+	padding: 2px 10px 3px 10px;
 	color: $button-color;
-	text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
 	font-size: 0.9em;
 	cursor: pointer;
 
@@ -26,23 +26,54 @@
 	}
 }
 
+.button-online
+{
+	@include button;
+
+	background: $button-online;
+}
+
+.button-offline
+{
+	@include button;
+
+	background: $button-offline;
+}
+
+.button-login
+{
+	@include button;
+
+	background: $button-login;
+}
+
+.button-new
+{
+	@include button;
+
+	background: $button-new;
+}
+
 /*********************************************************************/
 /* Inputs */
-$input: 	#aaaaaa;
 
-input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="tel"], input[type="select"], select, textarea
+#mdp
 {
+	@include appearance(none);
+	padding: 3px;
+	margin: 0 0 0 6px;
+	border: 1px $input solid;
+	@include border-radius(3px);
+	min-width: 150px;
+	max-width: 150px;
+}
+
+#content
+{
+	@include box-sizing(border-box);
+	@include appearance(none);
 	padding: 3px;
 	border: 1px $input solid;
 	@include border-radius(3px);
-
-	&:hover, &:focus, &:active
-	{
-		border: 1px $input solid;
-	}
-}
-
-input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="tel"]
-{
-	min-width: 164px;
+	width: 100%;
 }

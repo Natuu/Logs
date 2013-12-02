@@ -1,5 +1,13 @@
 /* Layout */
-.body { background: $body; }
+body
+{
+	background: $body;
+	height: 80%;
+	width: 80%;
+	max-width: 450px;
+	margin: auto;
+	@include box-sizing(border-box);
+}
 
 @import  "layout/header.scss";
 @import  "layout/nav.scss";

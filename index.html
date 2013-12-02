@@ -18,11 +18,19 @@
 
 <body ng-controller="LogsCtrl">
 	<header class="header">
-		<h1 class="h1">[Natuu]</h1>
-		<h2 class="h3">Historique d'un geek</h2>
+		<a href="#">
+			<h1>[Natuu]</h1>
+			<h2>Historique d'un geek</h2>
+		</a>
 	</header>
 
 	<nav class="nav">
+		<a href="#/login" class="button">Me connecter</a>
+		<a href="#/new" class="button">Logger</a>
+		<div class="status">
+			<span class="button-online" ng-hide="offline">Online</span>
+			<span class="button-offline" ng-show="offline">Offline</span>
+		</div>
 	</nav>
 
 	<section class="section" ng-view>

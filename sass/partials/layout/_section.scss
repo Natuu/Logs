@@ -1,14 +1,18 @@
-/* Sections */
-
-.section
-{
-	@media all and (max-width: 550px)
-	{
-		
-	}
-}
-
 .article
 {
+	background-color: $article;
 
+	padding: 10px 20px;
+	margin: 10px auto;
+
+	@include border-radius(7px);
+
+	.date
+	{
+		font-size: 0.75em;
+		font-weight: 600;
+		color: $date;
+		line-height: 1.3em;
+		margin: 5px 0 0 0;
+	}
 }

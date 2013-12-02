@@ -64,8 +64,8 @@
 	margin: 0 0 0 6px;
 	border: 1px $input solid;
 	@include border-radius(3px);
-	min-width: 150px;
-	max-width: 150px;
+	min-width: 110px;
+	max-width: 110px;
 }
 
 #content
@@ -76,4 +76,5 @@
 	border: 1px $input solid;
 	@include border-radius(3px);
 	width: 100%;
+	font-size: 0.8em;
 }

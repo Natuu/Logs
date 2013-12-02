@@ -1,6 +1,6 @@
 CACHE MANIFEST
  
-# v1.1
+# v1.2
 
 CACHE:
 
@@ -15,8 +15,6 @@ angular/angular-route.min.js.map
 angular/angular.min.js
 angular/angular.min.js.map
 
-data/login.php
-
 jsmin/logs.min.js
 
 stylesheets/main.css
@@ -24,6 +22,9 @@ stylesheets/main.css
 views/list.html
 views/login.html
 views/new.html
+
+icone.png
+favicon.png
 
  
 NETWORK:

@@ -28,8 +28,9 @@
 	</header>
 
 	<nav class="nav">
-		<a href="#/login" class="button">Me connecter</a>
-		<a href="#/new" class="button">Logger</a>
+		<a href="#/login" class="button-login" ng-hide="connected">Ouvrir</a>
+		<a href="#" class="button-logout" ng-show="connected" ng-click="logout()">Fermer</a>
+		<a href="#/new" class="button-logger" ng-show="connected">+1</a>
 		<div class="status">
 			<span class="button-online" ng-hide="offline">Online</span>
 			<span class="button-offline" ng-show="offline">Offline</span>

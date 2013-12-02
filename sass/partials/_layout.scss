@@ -2,11 +2,15 @@
 body
 {
 	background: $body;
-	height: 80%;
 	width: 80%;
 	max-width: 450px;
 	margin: auto;
 	@include box-sizing(border-box);
+
+	@media all and (max-width: 450px)
+	{
+		width: 85%;
+	}
 }
 
 @import  "layout/header.scss";

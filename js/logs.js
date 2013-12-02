@@ -8,7 +8,6 @@ angular
 		when('/login', {controller:'LoginCtrl', templateUrl:'views/login.html'}).
 		when('/new', {controller:'NewCtrl', templateUrl:'views/new.html'}).
 		otherwise({redirectTo: '/'});
-		// $locationProvider.html5Mode(true);
 	}
 ])
 
@@ -108,6 +107,21 @@ angular
 
 			defer.resolve();
 		})
+
+		$scope.logout = function() {
+
+			$cookies.connected = 'false';
+			window.location.replace('');
+		}
+
+		if ($cookies.connected == 'true')
+		{
+			$scope.connected = true;
+		}
+		else
+		{
+			$scope.connected = false;
+		}
 	}
 ])
 

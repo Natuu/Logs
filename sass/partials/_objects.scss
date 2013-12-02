@@ -14,15 +14,39 @@
 	@include appearance(none);
 }
 
-.button
+.button-login
 {
 	@include button;
 
-	background: $button;
+	background: $button-login;
 
 	&:hover, &:active, &:focus
 	{
-		background: darken($button, 5%);
+		background: darken($button-login, 5%);
+	}
+}
+
+.button-logout
+{
+	@include button;
+
+	background: $button-logout;
+
+	&:hover, &:active, &:focus
+	{
+		background: darken($button-logout, 5%);
+	}
+}
+
+.button-logger
+{
+	@include button;
+
+	background: $button-logger;
+
+	&:hover, &:active, &:focus
+	{
+		background: darken($button-logger, 5%);
 	}
 }
 
@@ -40,18 +64,50 @@
 	background: $button-offline;
 }
 
-.button-login
+.button-validate-login
 {
-	@include button;
+	position: relative;
+	top: 3px;
+	left: 243px;
+	float: left;
+	
+	border: none;
+	background-color: inherit;
+	text-shadow: none;
+	color: inherit;
+	font-size: 0.8em;
+	padding: 1px 6px 1px 4px;
+	margin: 0;
+	cursor: pointer;
+	@include appearance(none);
+	@include border-radius(3px);
 
-	background: $button-login;
+	&:hover, &:active, &:focus
+	{
+		color: $button-color;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+		background: $button-validate;
+	}
 }
 
-.button-new
+.button-validate-new
 {
+	position: relative;
+	bottom: 42px;
+	right: 4px;
+	float: right;
+	
 	@include button;
+	background-color: inherit;
+	text-shadow: none;
+	color: inherit;
 
-	background: $button-new;
+	&:hover, &:active, &:focus
+	{
+		color: $button-color;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+		background: $button-validate;
+	}
 }
 
 /*********************************************************************/
@@ -60,7 +116,7 @@
 #mdp
 {
 	@include appearance(none);
-	padding: 3px;
+	padding: 3px 28px 3px 3px;
 	margin: 0 0 0 6px;
 	border: 1px $input solid;
 	@include border-radius(3px);
@@ -72,7 +128,7 @@
 {
 	@include box-sizing(border-box);
 	@include appearance(none);
-	padding: 3px;
+	padding: 3px 65px 3px 3px;
 	border: 1px $input solid;
 	@include border-radius(3px);
 	width: 100%;

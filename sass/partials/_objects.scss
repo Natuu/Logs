@@ -67,8 +67,6 @@
 .button-validate-login
 {
 	position: relative;
-	top: 3px;
-	left: 243px;
 	float: left;
 	
 	border: none;
@@ -87,6 +85,18 @@
 		color: $button-color;
 		text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
 		background: $button-validate;
+	}
+
+	@media all and (min-width: 348px)
+	{
+		top: 3px;
+		left: 243px;
+	}
+
+	@media all and (max-width: 347px)
+	{
+		bottom: 23px;
+		left: 218px;
 	}
 }
 

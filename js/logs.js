@@ -136,21 +136,15 @@ angular
 
 		$scope.login = function() {
 
-			$http({method: 'post', url: 'data/login.php', data: $scope.mdp})
-			.success(function(data) {
-
-				$cookies.connected = data;
-
-				if ($cookies.connected == 'true')
-				{
-					window.location.replace('');
-				}
-				else
-				{
-					alert('Tu sais même pas taper ton propre mot de passe è_é')
-				};
-				
-			})
+			if ($scope.mdp == "123")
+			{
+				$cookies.connected = 'true';
+				window.location.replace('');
+			}
+			else
+			{
+				alert('Tu sais même pas taper ton propre mot de passe è_é')
+			}
 		}
 	}
 ])
